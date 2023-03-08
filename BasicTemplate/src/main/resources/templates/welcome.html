@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <p>欢迎到来，通过thymeleaf 模板引擎</p>
+  <p type="">所有的Html元素都可以被thymeleaf替换接管: th:元素名</p>
+  <p> xmlns:th="http://www.thymeleaf.org":这句声明使用thymeleaf标签</p>
+  <p th:text="${msg}"></p>
+  <h1>------utext测试，可以返回非文本的值------</h1>
+    <div th:text="${utext}"></div>
+    <div th:utext="${utext}"></div>
+  <h1>---------------------------------------------</h1>
+
+  <h1>--------------each测试，循环--------------</h1>
+        <h3 th:each="user:${users}" th:text="${user}"></h3>
+  <h1>---------------------------------------------</h1>
+</body>
+</html>

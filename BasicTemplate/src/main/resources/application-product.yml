@@ -1,0 +1,4 @@
+server:
+  port: 8080 #设置 Tomcat 内嵌端口号
+  servlet:
+    context-path: /product #设置上下文根

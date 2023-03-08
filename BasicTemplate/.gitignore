@@ -1,0 +1,50 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+.idea　　　　------.idea目录
+
+.mvn　　　　------.mvn目录
+
+*.iml
+
+mvnw
+
+mvnw.cmd
+
+logs/ 　　--- 我生成的日志文件目录
+
+target/   ----项目打包或者运行生成的文件目录
+
+help.md　　　　----新建springboot项目自带生成的文件
+

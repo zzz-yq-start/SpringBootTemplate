@@ -1,0 +1,13 @@
+#spring boot Master configuration file
+
+#open Development environment(激活开发环境)
+spring:
+  profiles:
+    active: dev
+
+
+#激活test环境
+#spring.profiles.active=test
+
+#激活生产环境
+#spring.profiles.active=product

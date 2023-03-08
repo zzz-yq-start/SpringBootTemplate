@@ -1,0 +1,36 @@
+
+server:
+  port: 8080 #设置 Tomcat 内嵌端口号
+  servlet:
+    context-path: / #设置上下文根
+
+spring:
+  thymeleaf:
+    cache: false
+  #配置数据库的连接信息
+  #注意这里的驱动类有变化
+  #mvc:
+    #(静态资源请求路径)默认/**
+    #static-path-pattern:
+  #web:
+    #resources:
+      #静态资源文件位置(resources>static>public)(默认classpath:/resources/,classpath:/static/,classpath:/templates/)
+      #static-locations:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboottemplate?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+    username: root
+    password: 1842189692
+
+mybatis:
+#  config-location: classpath:mybatis-config.xml # 配置 MyBatis 配置文件路径
+  mapper-locations: classpath:mapper/**/*.xml # 配置 Mapper XML 地址
+#  type-aliases-package: com.example.springboot_mybatis.model # 配置数据库实体包路径
+
+#自定义配置(通过@Value注解在项目中引用 eg:@Value("${school.name}"))
+school:
+  name: SpringBoot
+  website: https://www.baidu.com
+website: https://www.baidu.com
+
+
